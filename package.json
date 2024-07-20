@@ -1,0 +1,22 @@
+{
+  "name": "@sxrated/sx-rated",
+  "version": "1.0.0",
+  "description": "Digital SX SXRated webflow library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalsx/sx-rated.git"
+  },
+  "author": "Joakym Girard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digitalsx/sx-rated/issues"
+  },
+  "homepage": "https://github.com/digitalsx/sx-rated#readme",
+  "workspaces": [
+    "libs/*"
+  ]
+}

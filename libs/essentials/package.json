@@ -1,0 +1,22 @@
+{
+  "name": "@sxrated/essentials",
+  "version": "1.0.0",
+  "description": "A vanilla javascript library packed with utility functions that are essentials in creating websites in webflow or other platforms",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalsx/sx-rated.git"
+  },
+  "author": "Joakym Girard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digitalsx/sx-rated/issues"
+  },
+  "homepage": "https://github.com/digitalsx/sx-rated#readme",
+  "type": "module"
+}
