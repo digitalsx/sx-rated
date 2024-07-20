@@ -1,6 +1,6 @@
 {
   "name": "@sxrated/essentials",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A vanilla javascript library packed with utility functions that are essentials in creating websites in webflow or other platforms",
   "main": "dist/bundle.js",
   "devDependencies": {

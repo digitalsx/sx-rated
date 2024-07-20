@@ -1,15 +1,8 @@
-// index.js
-import { attributeYearUpdater } from "./libs/attribute-year-updater.js";
-// Import other utility functions as needed
-
-// Self-initializing function
+import { attributeCurrentYear } from "./libs/attribute-current-year.js";
 (function() {
     function initialize() {
-        // Call your utility functions here
-        attributeYearUpdater();
-        // Call other utility functions as needed
+        attributeCurrentYear();
     }
 
-    // Listen for the DOMContentLoaded event
     document.addEventListener('DOMContentLoaded', initialize);
 })();
