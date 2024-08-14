@@ -1,8 +1,14 @@
-import { attributeCurrentYear } from "./libs/attribute-current-year.js";
-(function() {
-    function initialize() {
-        attributeCurrentYear();
-    }
+'use strict';
 
-    document.addEventListener('DOMContentLoaded', initialize);
-})();
+import { ready } from "../../utils/page-ready.js";
+
+import { attributeCurrentYear } from "./libs/attribute-current-year.js";
+import { attributeToggleDisplay } from "./libs/attribute-toggle-display.js";
+
+
+function initialize() {
+    attributeCurrentYear();
+    attributeToggleDisplay();
+}
+
+ready(initialize);

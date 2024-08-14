@@ -1,16 +1,25 @@
 // rollup.config.js
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
+import cleanup from 'rollup-plugin-cleanup';
+import terser from '@rollup/plugin-terser';
 
 export default {
-  input: 'index.js', // Your entry file
-  output: {
-    file: 'dist/bundle.js', // Output file
-    format: 'iife', // Immediately-invoked function expression format
-    name: 'MyLibrary' // Global variable name for your library
+  input: 'index.js',
+  output: [{
+    file: 'dist/bundle.js',
+    format: 'iife',
+    name: 'MyLibrary'
   },
+  {
+    file: 'dist/bundle.min.js',
+    format: 'iife',
+    name: 'version',
+    plugins: [terser()]
+  }],
   plugins: [
-    resolve(), // Resolves node_modules
-    commonjs() // Converts CommonJS to ES6
+    resolve(),
+    commonjs(),
+    cleanup()
   ]
 };
