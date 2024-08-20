@@ -3,6 +3,8 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import cleanup from 'rollup-plugin-cleanup';
 import terser from '@rollup/plugin-terser';
+import css from 'rollup-plugin-import-css';
+import strip from '@rollup/plugin-strip';
 
 export default {
   input: 'index.js',
@@ -20,6 +22,8 @@ export default {
   plugins: [
     resolve(),
     commonjs(),
-    cleanup()
+    cleanup(),
+    css(),
+    strip()
   ]
 };

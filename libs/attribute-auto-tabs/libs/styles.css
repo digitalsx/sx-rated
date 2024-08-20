@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) {
+  /* Big tabs - inactive tabs */
+  [sx-autotabs-item] [sx-autotabs-stage] {
+    opacity: 0;
+  }
+  [sx-autotabs-item] [sx-autotabs-link-wrapper] {
+    opacity: 0.5;
+  }
+  [sx-autotabs-item] [sx-autotabs-link-wrapper]:hover {
+    opacity: 0.8;
+  }
+  [sx-autotabs-item] [sx-autotabs-link-wrapper] [sx-autotabs-progress-bar] {
+    opacity: 0.5;
+  }
+  [sx-autotabs-item] [sx-autotabs-link-wrapper] [sx-autotabs-menu-text],
+  [sx-autotabs-item] [sx-autotabs-link-wrapper] [sx-autotabs-btn] {
+    filter: saturate(0%);
+  }
+
+  /* Big tabs - active tabs */
+  [sx-autotabs-item].cc-active [sx-autotabs-stage] {
+    opacity: 1;
+  }
+  [sx-autotabs-item].cc-active [sx-autotabs-link-wrapper] {
+    opacity: 1;
+  }
+  [sx-autotabs-item].cc-active [sx-autotabs-link-wrapper] [sx-autotabs-progress-bar] {
+    opacity: 1;
+  }
+  [sx-autotabs-item].cc-active [sx-autotabs-link-wrapper] [sx-autotabs-menu-text],
+  [sx-autotabs-item].cc-active [sx-autotabs-link-wrapper] [sx-autotabs-btn] {
+    opacity: 1;
+    filter: saturate(100%);
+  }
+}
